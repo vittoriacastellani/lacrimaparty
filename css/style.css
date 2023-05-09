@@ -1,19 +1,10 @@
+
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: white;
+  margin: 0;
 }
 
-.logo {
-  height: 150px;
-  width: auto;
-}
-
-/* ///////////..utility classes../////////// */
-
-.container {
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
-}
 
 .btn {
   display: inline-block;
@@ -46,14 +37,8 @@ body {
   transition: transform 0.2s linear !important;
 }
 
-/* ............/navbar/............ *
 
-/* desktop mode............/// */
 
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
-  display: none;
-}
 
 .navbar {
   box-shadow: 0px 5px 10px 0px #aaa;
@@ -105,11 +90,11 @@ body {
   width: auto;
 }
 
+
 /* ............//// Prima sezione ////......... */
 
 .showcase-area {
   height: 100vh;
-  background-image: url(/Users/HP/OneDrive/Desktop/Sito5Aprile/imgs/collagehomeopacità.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,10 +116,6 @@ body {
   font-size: 130px;
 }
 
-body {
-    background-color: #fff;
-    margin: 0px;
-}
 
 h1, .sottotitolo {
     font-family: 'Asap Condensed', sans-serif;
@@ -168,6 +149,7 @@ h1, .sottotitolo {
 .card {
   display: inline-block;
   text-align: center;
+  background-color: white;
   border-color: #444;
   padding: 0px 0px 20px;
   box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
@@ -428,6 +410,7 @@ input {
   background-color: #444;
   padding-top: 0px;
   font-family: 'Asap Condensed', sans-serif;
+  margin: 0px;
 }
 
 .text-playlist {
