@@ -55,9 +55,6 @@ body {
   display: flex;
   justify-content: space-between;
   height: 64px;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row-reverse;
 }
 
 .menu-items {
@@ -76,13 +73,13 @@ body {
   text-decoration: none;
   color: #444;
   font-weight: 500;
-  transition: color 0.3s ease-in-out;
 }
 
 .menu-items a:hover {
   color: #329DF4;
   transition: color 0.3s ease-in-out;
 }
+
 
 .logo {
   margin-bottom: 0.5rem;
@@ -194,7 +191,6 @@ h5 {
 
 
 .bodyregistrati {
-  background-image: url("/Users/HP/OneDrive/Desktop/Sito5Aprile/imgs/collageopacità.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 	display: flex;
