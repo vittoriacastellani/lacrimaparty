@@ -1,4 +1,6 @@
 
+
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
@@ -47,7 +49,7 @@ body {
   background: #fff;
   color: white;
   opacity: 0.85;
-  height: 50px;
+  height: 3.20em;
   z-index: 12;
 }
 
@@ -80,6 +82,37 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
+#dropmenu {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+#dromenu ul {
+  list-style-type: none;
+}
+
+#dropmenu li {
+  width:100px;
+  float:left;
+  color:black;
+}
+
+#dropmenu li ul {
+  display: none;
+}
+
+#dropmenu li:hover ul{
+display: block;
+position: absolute;
+z-index:1;
+width: 150px;
+padding: 0;
+margin: 0 0 0 -1px;
+background: #fff;
+}
 
 .logo {
   margin-bottom: 0.5rem;
@@ -108,9 +141,9 @@ body {
 
 
 .main-title {
-  text-transform: uprpercase;
+  text-transform: uppercase;
   margin-top: 0em;
-  font-size: 130px;
+  font-size: 4em;
 }
 
 
@@ -124,15 +157,13 @@ h1, .sottotitolo {
 }
 
 .sottotitolo {
-  font-size: 50px;
+  font-size: 2em;
 }
 
 .h2eventi {
-  font-family: 'Bebas Neue', cursive;
-  color: #329DF4;
-  text-shadow: 1.5px 0 #FA78E9, 2px 2px 2px #FA6C98, 1.5px 0px #FA6C98, 0 2px 2px #FA6C98;
   padding-top: 0px;
   padding-bottom: 0px;
+  font-size: 2em;
 }
 
 .sezioneeventi {
@@ -140,7 +171,7 @@ h1, .sottotitolo {
   padding: 0px 0px 5px 20px;
   font-size: 1.5em;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 2em;
 }
 
 .card {
@@ -354,6 +385,21 @@ input {
   margin-top: 50px;
 }
 
+
+.box-spotify {
+  margin: 120px 60px 90px 100px;
+  height: 400px;
+  width: auto;
+  box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
+  transition: 0.7s;
+}
+
+.box-spotify:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s linear;
+}
+
+
 .playlist {
   margin-top: 0px;
   padding-bottom: 80px;
@@ -373,13 +419,14 @@ input {
   background-color: #333;
   border: 1px solid black;
   border-color: #444;
-  padding: 0px 0px 20px;
+  padding-top: 0px;
+  padding-bottom: 20px;
   box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
   transition: 0.7s;
   border-radius: 10px 10px 10px 10px;
   align-items: right;
   margin-left: 120px;
-  margin-top: 90px;
+  margin-top: 40px;
 }
 
 .box-playlist:hover {
@@ -455,14 +502,31 @@ input {
 .text-left {
   text-align: left;
   color: white;
-  text-shadow: 3px 3px #329DF4, 2px 2px 2px #329DF4, 4px 4px #FA6C98, 2px 2px 2px #FA6C98;
-  font-size: 55px;
-  padding-top: 150px;
+  font-size: 40px;
+  padding-top: 50px;
   padding-left: 70px;
 }
 
-p {
-  margin: 20px;
+.title-spotify {
+  margin: 0px
+}
+
+.h2playlist {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 60px
+}
+
+.p-playlist {
+  margin-top: 120px;
+}
+
+.text-right {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 70px;
+  color: white;
+  font-size: 40px;
 }
 
 .text-social {
