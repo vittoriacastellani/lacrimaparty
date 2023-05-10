@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lacrima Party</title>
         <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Lacrima Party</title>
+
+        <!----------------- LINK --------------------->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-          <link rel="shortcut icon" href="imgs/lacrimasvg.svg"/>
+        <link rel="shortcut icon" href="imgs/lacrimasvg.svg"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
     </head>
 
     <header>
-      <nav class="navbar">
-        <div class="navbar-container container">
-            <ul class="menu-items">
 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#prossimieventi">Eventi</a></li>
+      <!--------------- NAVBAR ------------------->
+      <nav class="wrapper-main navbar">
+        <div class="navbar-container">
+
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="registrati.html">Galleria</a></li>
                 <li><a href="#merch">Merch</a></li>
                 <li><a href="#footer">Contatti</a></li>
-              
-            
-            <div id="dropmenu">
-              <li>
-                <a href="#"> Social</a>
-                  <ul>
-                    <li><a href="https://www.instagram.com/lacrimaparty/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.tiktok.com/@piangiamoeballiamo?lang=en" target="_blank">TikTok</a></li>
-                    <li><a href="#">Telegram</a></li>
-                  </ul>
-               </li>
-
+                <li><a href="#footer">Social</a></li>
             </ul>
         </div>
+
     </nav>
     </header>
 
+
     <body>
-        <section name="social" class="showcase-area" style="background-image: url(imgs/opacitablu.jpg)" width="100%" id="showcase">
+      <!---------------------- PAGINA HOME ---------------------->
+        <section class="wrapper-main showcase-area" style="background-image: url(imgs/opacitablu.jpg)" width="100%" id="showcase">
           <div class="showcase-container">
             <img src="imgs/lacrimasvg.svg" class="logo">
             <h1 class="main-title animate__animated animate__zoomIn" id="home">PIANGIAMO E BALLIAMO</h1>
@@ -50,7 +48,7 @@
             <a href="registrati.html" class="btn btn-registrati animate__animated animate__slideInUp">REGISTRATI</a>
           </div>
         </section>
-
+      <!---------------------- SEZIONE EVENTI ------------------->
         <section class="sezioneeventi" style="background-image: url(imgs/qubo.jpg);">
             <a name="prossimieventi"><h2 class="h2eventi">PROSSIMI EVENTI</h2></a>
             <div class="card" style="width: 14rem;">
@@ -100,6 +98,8 @@
               </div>
         </section> 
 
+
+      <!------------------ SEZIONE SPOTIFY ------------------->
         <section class="title-spotify">
           <h2 class="h2playlist">Ascolta su Spotify l'unica, vera e inimitabile playlist ufficiale LACRIMA PARTY</h2>
         </section>
@@ -141,13 +141,16 @@
             
           </section>
 
+
+
+
         <section class="serate">
           <div class="postit">
           <img src="imgs/postit.jpg" class="img1-serate">
           </div>
         </section>
 
-
+    <!--------------------- FOOTER -------------------------->
     <footer>
     <a name="footer">Footer</a>
     </footer>  

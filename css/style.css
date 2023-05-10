@@ -1,12 +1,29 @@
-
-
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
   margin: 0;
 }
 
+/*.........../// MEDIA QUERY ///................*/
+/*.... <600px, 601px, 768px, 992px, 1200px> ....*/
+
+@media only screen and (max-width: 600px) and (orientation: landscape){
+  .wrapper-main{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+  .wrapper-main{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .wrapper-main{
+    width: 100%;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -14,17 +31,18 @@ body {
   cursor: pointer;
   outline: none;
   margin-top: 1em;
+  margin-bottom: 1em;
   font-weight: small;
   border-radius: 30px;
   background-color: #329DF4;
 	border: 4px solid #fff;
 	color: white;
-	font-size: 35px;
+	font-size: 1.3em;
 	font-weight: bold;
 	padding: 15px 35px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	transition: transform 80ms ease-in !important;
+	transition: 80ms ease-in !important;
 }
 
 .btn-registrati {
@@ -36,11 +54,16 @@ body {
 .btn-registrati:hover {
   background: #329DF4;
   transform: scale(1.2) !important;
-  transition: transform 0.2s linear !important;
+  transition: 0.2s linear !important;
 }
 
 
+.wrapper-main {
+  width: 100%;
+}
 
+
+/*......... NAVBAR ........*/
 
 .navbar {
   box-shadow: 0px 5px 10px 0px #aaa;
@@ -49,70 +72,50 @@ body {
   background: #fff;
   color: white;
   opacity: 0.85;
-  height: 3.20em;
+  height: 3.25em;
   z-index: 12;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  height: 64px;
+nav ul {
+  float: left;
+  margin-left: 20px;
 }
 
-.menu-items {
-  order: 2;
-  display: flex;
-}
-
-.menu-items li {
-  list-style: none;
+nav ul li {
+  display: inline-block;
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
-.menu-items a {
+nav ul li a {
   text-decoration: none;
   color: #444;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
-.menu-items a:hover {
+nav ul li a:hover {
   color: #329DF4;
   transition: color 0.3s ease-in-out;
 }
 
-#dropmenu {
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
-  background: #fff;
+
+@media (max-width: 400px) {
+  nav ul li a {
+    font-size: 0.6em;
+  }
 }
 
-#dromenu ul {
-  list-style-type: none;
+
+@media (max-width: 600px) {
+  nav ul li a {
+    font-size: 0.7em;
+  }
 }
 
-#dropmenu li {
-  width:100px;
-  float:left;
-  color:black;
-}
 
-#dropmenu li ul {
-  display: none;
-}
 
-#dropmenu li:hover ul{
-display: block;
-position: absolute;
-z-index:1;
-width: 150px;
-padding: 0;
-margin: 0 0 0 -1px;
-background: #fff;
-}
 
 .logo {
   margin-bottom: 0.5rem;
@@ -121,7 +124,8 @@ background: #fff;
 }
 
 
-/* ............//// Prima sezione ////......... */
+
+/* ............//// PAGINA HOME ////......... */
 
 .showcase-area {
   height: 100vh;
@@ -136,22 +140,25 @@ background: #fff;
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 1.8rem;
   }
 
 
 .main-title {
-  text-transform: uppercase;
   margin-top: 0em;
-  font-size: 4em;
+  font-size: 5em;
+  display: block;
+  font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    text-shadow: 3px 3px #329DF4, 2px 2px 2px #FA6C98, 4px 4px #FA6C98, 2px 2px 2px #FA6C98;
 }
 
 
-h1, .sottotitolo {
+.sottotitolo { 
     font-family: 'Asap Condensed', sans-serif;
     color: white;
     margin: 0px;
-    line-height: 140%;
     text-align: center;
     text-shadow: 3px 3px #329DF4, 2px 2px 2px #FA6C98, 4px 4px #FA6C98, 2px 2px 2px #FA6C98;
 }
@@ -159,6 +166,9 @@ h1, .sottotitolo {
 .sottotitolo {
   font-size: 2em;
 }
+
+
+
 
 .h2eventi {
   padding-top: 0px;
@@ -221,157 +231,7 @@ h5 {
 }
 
 
-.bodyregistrati {
-  background-repeat: no-repeat;
-  background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 100vh;
-	margin: -20px 0 50px;
-}
 
-.h1reg {
-  font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.preg {
-	font-size: 16px;
-	font-weight: 100;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	margin: 10px 0 30px;
-}
-
-span {
-	font-size: 16px;
-}
-
-.areg {
-	color: #333;
-	font-size: 16px;
-	text-decoration: none;
-	margin: 15px 0;
-}
-
-.btn-login {
-	border-radius: 20px;
-	border: 1px solid #FA6C98;
-	color: #329DF4;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-}
-
-form {
-	background-color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	height: 100%;
-	text-align: center;
-}
-
-input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
-}
-
-.container-reg {
-	z-index: 1;
-  background-color: #fff;
-	border-radius: 10px;
-  	box-shadow: 20px 20px 20px rgba(0,0,0,0.25), 20px 20px 20px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
-	min-height: 480px;
-}
-
-.form-container-reg {
-	position: absolute;
-	top: 0;
-	height: 100%;
-}
-
-.container-login {
-	left: 0;
-	width: 50%;
-	z-index: 2;
-}
-
-
-.overlay-container {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-}
-
-
-.overlay {
-	background: #329DF4;
-	background: -webkit-linear-gradient(to right, #FA78E9, #329DF4);
-	background: linear-gradient(to right, #FA78E9, #329DF4);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0 0;
-	color: #FFFFFF;
-	position: relative;
-	left: -100%;
-	height: 100%;
-	width: 200%;
-  text-align: center;
-}
-
-.overlay-panel {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 0px;
-	text-align: center;
-	top: 0;
-	height: 100%;
-	width: 50%;
-}
-
-
-.overlay-right {
-	right: 0;
-}
-
-.social-container {
-	margin: 10px 0;
-}
-
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-}
-
-.pass {
-  margin-bottom: 20px;
-}
 
 .img1-serate {
   height: 400px;
