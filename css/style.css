@@ -88,13 +88,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 500px) {
-  
-  .bodypage {
-    border-right: none;
-    padding: 0;
-    margin-right: 0px;
-  }
+@media (max-width: 800px) {
 
   .navbar {
     float: none;
@@ -103,9 +97,9 @@ nav ul li a:hover {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   nav ul li a {
-    font-size: 0.55em;
+    font-size: 0.7em;
   }
 }
 
@@ -114,10 +108,10 @@ nav ul li a:hover {
 
 
 
-.logo {
-  margin-bottom: 0.5rem;
-  height: 150px;
-  width: auto;
+.lacrima {
+  margin-top: 0;
+  height: 200px;
+  width: 500px;
 }
 
 
@@ -133,9 +127,20 @@ nav ul li a:hover {
 
 @media (max-width: 500px) {
   .showcase-area {
+    float: none;
     border-right: none;
     height: 80vh;
-    width: 62vh;
+    width: 60vh;
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .showcase-area {
+    float: none;
+    border-right: none;
+    height: 80vh;
+    width: 78vh;
     float: none;
     display: block;
   }
@@ -153,7 +158,7 @@ nav ul li a:hover {
 
 .main-title {
   margin-top: 0em;
-  font-size: 5em;
+  font-size: 5.5em;
   display: block;
   font-family: 'Asap Condensed', sans-serif;
     color: white;
@@ -190,7 +195,7 @@ nav ul li a:hover {
 .h2eventi {
   padding-top: 0px;
   padding-bottom: 0px;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .sezioneeventi {
@@ -251,7 +256,7 @@ h5 {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   
   .sezioneeventi {
     font-size: 1em;
@@ -262,6 +267,7 @@ h5 {
     width: 12em;
     height: 12em;
     padding: 0 0 0 0;
+    margin-bottom: 2em;
   }
 
   .card-body {
@@ -285,175 +291,175 @@ h5 {
 }
 
 
-/*............ SPOTIFY ..........*/
 
-.title-spotify {
-  margin: 0px
+
+
+
+
+
+
+/*................ FOOTER .................*/
+
+@media (max-width: 500px) {
+  .sezionefooter {
+    border-right: none;
+    height: 60vh;
+    width: 60vh;
+    display: inline-block;
+  }
 }
 
-.h2playlist {
+@media (max-width: 400px) {
+  .sezionefooter {
+    border-right: none;
+    height: 60vh;
+    width: 78vh;
+    display: inline-block;
+  }
+}
+
+
+
+.container{
+  margin:0;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #EB8AB6);
+          background: linear-gradient(to right, #EB8AB6, #329DF4);
+}
+
+.row{
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
   text-align: center;
-  margin-top: 20px;
-  font-size: 60px
 }
+
+.row2 {
+  align-items: center;
+  display: flex;
+}
+
+
+ul{
+  list-style: none;
+}
+
+.social-links {
+  margin-left: 4em;
+}
+
 
 
 @media (max-width: 500px) {
-  .h2playlist {
-    font-size: 2em;
-    margin-top: 2em;
+  .footer-col {
+    border-right: none;
+    height: 20vh;
+    width: 60vh;
+    display: inline-flex;
+    font-size: 1em;
+  }
+  .footer-col ul li a{
+    font-size: 10px !important;
+  }
+  .footer-col{
+   width: 25%;
+   padding: 0 15px;
+   display: inline-block;
+}
+
+.footer-col .social-links a {
+  width: 25px !important;
+  height: 25px !important;
+  font-size: 12px;
+  display: inline-block;
+}
+}
+
+
+@media (max-width: 400px) {
+  .footer-col {
+    border-right: none;
+    height: 40vh;
+    width: 78vh;
+    display: inline-flex;
+    font-size: 0.8em;
   }
 
-  .title-spotify {
-    width: 55vh;
+  .footer-col ul li a{
+    font-size: 10px !important;
   }
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   display: inline-block;
 }
 
-
-.box-spotify {
-  margin: 120px 60px 90px 100px;
-  height: 400px;
-  width: auto;
-  box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
-  transition: 0.7s;
-}
-
-.box-spotify:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s linear;
-}
-
-
-.playlist {
-  margin-top: 0px;
-  padding-bottom: 80px;
-}
-
-.box-container {
+.footer-col .social-links a {
+  width: 25px !important;
+  height: 25px !important;
+  font-size: 12px;
   display: inline-flex;
-  justify-content: left;
-  align-items: left;
-  flex-wrap: wrap;
+}
 }
 
-.box-playlist {
-  display: block;
-  text-align: center;
-  width: 400px;
-  background-color: #333;
-  border: 1px solid black;
-  border-color: #444;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
-  transition: 0.7s;
-  border-radius: 10px 10px 10px 10px;
-  align-items: right;
-  margin-left: 120px;
-  margin-top: 40px;
-}
 
-.box-playlist:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s linear;
-}
-
-.img-box-playlist {
-  width: 100%;
-  height: auto;
+.footer-col h4{
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 35px;
+  margin-left: 1em;
+  font-weight: bold;
   position: relative;
-}
-
-.img-box-playlist img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: all ease 0.3s;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.playlist {
-  background-color: #444;
-  padding-top: 0px;
+  text-align: center;
   font-family: 'Asap Condensed', sans-serif;
-  margin: 0px;
 }
 
-.text-playlist {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
 }
 
-.text-playlist .box-title {
-  color: #329DF4;
-  font-size: 1.5em;
-  font-weight: 500;
-  color: white;
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
 }
 
-.text-playlist .box-title:hover {
-  color:#329DF4;
-  transition: all ease 0.3s;
-}
-
-.box-playlist-link  {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
   border-radius: 50%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  color: #2BFF75;
-  font-size: 55px;
-  box-shadow: 2px 2px 30px rgba(20,97,212,0.12);
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
 }
 
-.box-playlist:hover .img-box-playlist a {
-  display: flex;
+
+
+.logo2 {
+  width: 400px;
+  height: 100px;
 }
 
-.box-playlist:hover .img-box-playlist img {
-  filter: blur(3px);
-}
 
-.text-left {
-  text-align: left;
-  color: white;
-  font-size: 40px;
-  padding-top: 50px;
-  padding-left: 70px;
-}
 
-.p-playlist {
-  margin-top: 120px;
-}
 
-.text-right {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  margin-left: 70px;
-  color: white;
-  font-size: 40px;
-}
-
-.text-social {
-  margin: 0px;
-}
-
-.social-container {
-  margin-top: 20px;
-}
-
-.fa-instagram {
-  font-size: 20px;
-}
 
 
 

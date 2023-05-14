@@ -109,8 +109,8 @@
   
   .overlay {
       background: #329DF4;
-      background: -webkit-linear-gradient(to right, #FA78E9, #329DF4);
-      background: linear-gradient(to right, #FA78E9, #329DF4);
+      background: -webkit-linear-gradient(to right, white, #329DF4);
+      background: linear-gradient(to right, #FA6C98, #329DF4);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 0 0;
@@ -142,6 +142,7 @@
   
   .social-container {
       margin: 10px 0;
+      margin-top: 20px;
   }
   
   .social-container a {
@@ -163,4 +164,64 @@
     margin-bottom: 0.5rem;
     height: 150px;
     width: auto;
+  }
+  
+  .fa-instagram {
+    font-size: 20px;
+  }
+
+  .btn-accedi, .btn-registrati {
+    border-radius: 20px;
+    border: 3px solid #FA6C98;
+    color: #329DF4;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 50px;
+    letter-spacing: 1px;
+    background-color: #fff;
+    margin-top: 0;
+    font-family: 'Asap Condensed', sans-serif;
+    margin-top: 0.7em;
+  }
+
+  .btn-accedi a, .btn-registrati a {
+    text-decoration: none;
+    color: #329DF4;
+  }
+
+  .btn-accedi:hover a {
+    color:#FFFFFF;
+    transition: all ease 0.3s;
+  }
+
+  .btn-registrati:hover a {
+    color:#FFFFFF;
+    transition: all ease 0.3s;
+  }
+
+  .btn-registrati {
+    margin-bottom: 2em;
+  }
+
+  
+  .btn-accedi:hover {
+    color:#FFFFFF;
+    background-color: #329DF4;
+    transition: all ease 0.3s;
+  }
+
+  .btn-registrati:hover {
+    color:#FFFFFF;
+    background-color: #329DF4;
+    transition: all ease 0.3s;
+  }
+
+  .social {
+    text-decoration: none;
+    color: white
+  }
+
+  .social:hover {
+    color: #FA6C98;
+    transition: all ease 0.3s;
   }
