@@ -15,8 +15,11 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+        
+        <!---------------- CSS ------------------------>
+        <link rel="stylesheet" type="text/css" href="css/stylebox.css"> 
         <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="css/stylemerch.css">
     </head>
 
     <header>
@@ -30,7 +33,7 @@
                 <li><a href="registrati.html">Galleria</a></li>
                 <li><a href="#merch">Merch</a></li>
                 <li><a href="#footer">Contatti</a></li>
-                <li><a href="#footer">Social</a></li>
+                <li><a href="registrati.html">REGISTRATI</a></li>
             </ul>
         </div>
 
@@ -38,19 +41,24 @@
     </header>
 
 
-    <body class="bodypage">
-      <!---------------------- PAGINA HOME ---------------------->
+    <body>
+
+
+      <!---------------------- HOME ---------------------->
         <section class="wrapper-main showcase-area" style="background-image: url(imgs/opacitablu.jpg)" id="showcase">
           <div class="showcase-container">
-            <img src="imgs/lacrimasvg.svg" class="logo">
+            <img src="imgs/lacrimasvg.svg" class="lacrima">
             <h1 class="main-title animate__animated animate__zoomIn" id="home">PIANGIAMO E BALLIAMO</h1>
             <p class="sottotitolo animate__animated animate__zoomIn"><b>LA FESTA INDIE TUTTA ITALIANA</b></p>
-            <a href="registrati.html" class="btn btn-registrati animate__animated animate__slideInUp">REGISTRATI</a>
           </div>
         </section>
-      <!---------------------- SEZIONE EVENTI ------------------->
-        <section class="sezioneeventi" style="background-image: url(imgs/qubo.jpg);">
+
+
+      <!---------------------- EVENTI ------------------->
+        <section class="sezioneeventi">
+
             <a name="prossimieventi"><h2 class="h2eventi">PROSSIMI EVENTI</h2></a>
+
             <div class="card">
                 <img src="imgs/Screenshot_20230420_223141_Instagram.jpg" class="card-img shadow" alt="evento1">
                 <div class="card-body">
@@ -60,6 +68,7 @@
                   <a href="#" class="btn btn-primary">Registrazione</a>
                 </div>
               </div>
+
               <div class="card">
                 <img src="imgs/Screenshot_20230420_223148_Instagram.jpg" class="card-img shadow" alt="evento2">
                 <div class="card-body">
@@ -69,6 +78,7 @@
                   <a href="#" class="btn btn-primary">Prevendite</a>
                 </div>
               </div>
+
               <div class="card">
                 <img src="imgs/Screenshot_20230420_223203_Instagram.jpg" class="card-img shadow" alt="evento3">
                 <div class="card-body">
@@ -78,6 +88,7 @@
                   <a href="#" class="btn btn-primary">Prevendite</a>
                 </div>
               </div>
+
               <div class="card">
                 <img src="imgs/Screenshot_20230420_223209_Instagram.jpg" class="card-img shadow" alt="evento4">
                 <div class="card-body">
@@ -87,6 +98,7 @@
                   <a href="#" class="btn btn-primary">Prevendite</a>
                 </div>
               </div>
+
               <div class="card">
                 <img src="imgs/Screenshot_20230420_223156_Instagram (1).jpg" class="card-img shadow" alt="evento5">
                 <div class="card-body">
@@ -96,58 +108,184 @@
                   <a href="#" class="btn btn-primary">Prevendite</a>
                 </div>
               </div>
+
         </section> 
 
 
-      <!------------------ SEZIONE SPOTIFY ------------------->
-        <section class="title-spotify">
-          <h2 class="h2playlist">Ascolta su Spotify l'unica, vera e inimitabile playlist ufficiale LACRIMA PARTY</h2>
-        </section>
+      <!------------------ SPOTIFY ------------------->
+      <section id="spotify">
+        <h2 class="h2playlist">Ascolta su Spotify l'unica, vera e inimitabile playlist ufficiale LACRIMA PARTY</h2>
+      </section>  
 
-        <section id="playlist" class="playlist">
-            <div class="box-container">
-               <div class="text-left">
-                 <b><p class="p-playlist">Ecco un po' di brani famosi che passiamo
-                  alle nostre serate, per piangere e ballare assieme...</p>
-                 <p>anche in cameretta!</p></b>
-               </div>
+      <section id="duepl">
 
-               <div>
-                <iframe style="border-radius:12px" class="box-spotify" src="https://open.spotify.com/embed/playlist/180fBut82CCyaaDwxo9WZ8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-               </div>
-
-               <div class="box-playlist">
-                 <div class="img-box-playlist">
-                   <img src="imgs/Screenshot_20230420_223156_Instagram (1).jpg" alt="fotoplaylist">
-                   <a href="https://open.spotify.com/playlist/7BVRQtmP7grWhPYAB48Eyt?si=92c2bf94a6a5479a&pt=2c82881ae0105da59ddf41c9daedbe5e" class="box-playlist-link" target="_blank">
-                   <b><i class="fa-brands fa-spotify"></i></b>
-                   </a>
-                 </div>
-              
-                  <div class="text-playlist">
-                  <a href="https://open.spotify.com/playlist/7BVRQtmP7grWhPYAB48Eyt?si=92c2bf94a6a5479a&pt=2c82881ae0105da59ddf41c9daedbe5e" class="box-title" style="text-decoration: none"><b>Il mio Lacrima Party</b></a>
+        <div class="container-reg animate__animated animate__zoomIn" id="container">
+          <div class="form-container-reg container-login">
+              <form action="#">
+                <span>Qui trovate alcuni dei brani delle nostre serate per piangere e ballare assieme...</span>
+                  <span>anche in cameretta!</span>
+                <div class="box-playlist">
+                  <div class="img-box-playlist">
+                    <img src="imgs/cantantirosa.jpg" alt="fotoplaylist">
+                    <a href="https://open.spotify.com/playlist/7BVRQtmP7grWhPYAB48Eyt?si=92c2bf94a6a5479a&pt=2c82881ae0105da59ddf41c9daedbe5e" class="box-playlist-link" target="_blank">
+                    <b><i class="fa-brands fa-spotify"></i></b>
+                    </a>
                   </div>
-
-               </div>
-               <div class="text-right">
-                <b><p>C'è quella canzone che ti fa rivivere mille ricordi</p>
-                  <p>e che vorresti troppo cantare a squarciagola</p>
-                  <p>in uno dei nostri eventi?</p>
-                  <p>Faccelo sapere aggiungendola direttamente</p>
-                  <p>alla VOSTRA playlist Lacrima Party!</p></b>
+                  
+                   <div class="text-playlist">
+                   <a href="https://open.spotify.com/playlist/7BVRQtmP7grWhPYAB48Eyt?si=92c2bf94a6a5479a&pt=2c82881ae0105da59ddf41c9daedbe5e" class="box-title" style="text-decoration: none"><b>Ascolta   <i class="fa-solid fa-arrow-up-right-from-square"></i></b></a>
+                   </div>
               </div>
+                  
+                  </form>
+          </div>
+          <div class="overlay-container">
+          <div class="overlay">
+              <div class="overlay-panel overlay-right">
+                <span>Hai un brano che ti fa piangere fortissimo e vorresti cantarlo a squarciagola alle nostre serate?
+                  Faccelo sapere aggiungendolo direttamente alla VOSTRA playlist Lacrima Party!</span>
+                <div class="box-playlist">
+                  <div class="img-box-playlist">
+                    <img src="imgs/Screenshot_20230420_223156_Instagram (1).jpg" alt="fotoplaylist">
+                    <a href="https://open.spotify.com/playlist/7BVRQtmP7grWhPYAB48Eyt?si=92c2bf94a6a5479a&pt=2c82881ae0105da59ddf41c9daedbe5e" class="box-playlist-link" target="_blank">
+                    <b><i class="fa-brands fa-spotify"></i></b>
+                    </a>
+                  </div>
+                  
+                   <div class="text-playlist">
+                   <a href="https://open.spotify.com/playlist/7BVRQtmP7grWhPYAB48Eyt?si=92c2bf94a6a5479a&pt=2c82881ae0105da59ddf41c9daedbe5e" class="box-title" style="text-decoration: none"><b>Aggiungi <i class="fa-solid fa-circle-plus"></i></b></a>
+                   </div>
+              </div>
+          </div>
+      </div>
+
+      </section>
+
+     <!------------------------ MERCH --------------------------->
+      <section class="merch" style="background-image: url(imgs/felpamod.jpg);">
+        <div class="slider-container">
+          <div class="text-merch">
+            <b><p>Scopri l'imperdibile Merch firmato</p>
+              <p><img src="imgs/lacrimasvg.svg" class="logo"></p>
+            <p>Felpe, maglie, calzini, sticker e molto</p>
+            <p>altro con un semplice click</p></b>
+            <button class="btn-acquista">
+            <a href="https://api.whatsapp.com/send/?phone=393284439830&text&type=phone_number&app_absent=0" target="_blank">ACQUISTA <i class="fa-solid fa-cart-shopping"></i></a>
+            </button>
+          </div>
+          <div class="slider">
+
+            <div class="slides">
+
+              <div id="slides__1" class="slide">
+                <img src="imgs/merchgrafica.jpg" class="img-merch">
+                <a class="slide__prev" href="#slides__5" title="Next"></a>
+                <a class="slide__next" href="#slides__2" title="Next"></a>
+              </div>
+
+              <div id="slides__2" class="slide">
+                <img src="imgs/merchdumbo.jpg" class="img-merch">
+                <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                <a class="slide__next" href="#slides__3" title="Next"></a>
+              </div>
+
+              <div id="slides__3" class="slide">
+                <img src="imgs/merchfelpa.jpg" class="img-merch">
+                <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                <a class="slide__next" href="#slides__4" title="Next"></a>
+              </div>
+
+              <div id="slides__4" class="slide">
+                <img src="imgs/merchnero.jpg" class="img-merch">
+                <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                <a class="slide__next" href="#slides__5" title="Prev"></a>
+              </div>
+
+              <div id="slides__5" class="slide">
+                <img src="imgs/felpapostit.jpg" class="img-merch">
+                <a class="slide__prev" href="#slides__4" title="Prev"></a>
+                <a class="slide__next" href="#slides__6" title="Prev"></a>
+              </div>
+
+              <div id="slides__6" class="slide">
+                <img src="imgs/sticker.jpg" class="img-merch">
+                <a class="slide__prev" href="#slides__5" title="Prev"></a>
+                <a class="slide__next" href="#slides__7" title="Prev"></a>
+              </div>
+
+              <div id="slides__7" class="slide">
+                <img src="imgs/calzini.jpg" class="img-merch">
+                <a class="slide__prev" href="#slides__6" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a>
+              </div>
+
             </div>
-            
-          </section>
 
 
+            <div class="slider__nav">
+              <a class="slider__navlink" href="#slides__1"></a>
+              <a class="slider__navlink" href="#slides__2"></a>
+              <a class="slider__navlink" href="#slides__3"></a>
+              <a class="slider__navlink" href="#slides__4"></a>
+              <a class="slider__navlink" href="#slides__5"></a>
+              <a class="slider__navlink" href="#slides__6"></a>
+              <a class="slider__navlink" href="#slides__7"></a>
+            </div>
 
-        </section>
 
+          </div>
+          
+        </div>
+
+      </section>
+
+
+      
     <!--------------------- FOOTER -------------------------->
+    
+    <section class="sezionefooter">
     <footer>
-    <a name="footer">Footer</a>
-    </footer>  
+    <footer class="footer">
+      <div class="container">
+       <div class="row">
+
+      <section>
+        <div>
+          <a name="footer"><img src="imgs/lacrimasvg.svg" class="logo2"></a>
+        </div>
+      </section>
+
+      <section class="row2">
+         <div class="footer-col">
+          <a name="footer"><h4>Contatti</h4></a>
+           <ul>
+             <li><a href="#">partylacrima@gmail.com</a></li>
+             <li><a href="#">+39 393 224 5361</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Acquista</h4>
+           <ul>
+             <li><a href="#">Prevendite</a></li>
+             <li><a href="#">Merchandising</a></li>
+           </ul>
+         </div>
+        
+         <div class="footer-col">
+           <h4>Seguici</h4>
+           <div class="social-links">
+             <a href="https://www.facebook.com/partylacrima/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://www.tiktok.com/@piangiamoeballiamo?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+             <a href="https://www.instagram.com/lacrimaparty/" target="_blank"><i class="fab fa-instagram"></i></a>
+             <a href="https://t.me/lacrimaparty" target="_blank"><i class="fab fa-telegram"></i></a>
+           </div>
+         </div>
+       </div>
+      </div>
+    </section>
+    </footer>
+    </footer>
+  </section>
 
     </body>
 </html>
