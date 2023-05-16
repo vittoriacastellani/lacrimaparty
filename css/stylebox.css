@@ -1,22 +1,103 @@
-@media (max-width: 600px) {
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 500px) {
   #duepl {
-  width: 60vh;
+  width: 62vh;
+  height: 50vh !important;
+  display: inline-block;
   }
 
-  #spotify {
-    width: 60vh;
+  .panel-spotify {
+    float: none;
+    border-right: none;
+    height: 80vh;
+    width: 62vh;
+    display: block;
   }
+
+  .h2playlist {
+    font-size: 2em !important;
+    margin-bottom: 0;
+    width: 62vh;
+  }
+
+  span {
+    font-size: 0.7em !important;
+  }
+
+  .box-playlist {
+    width: 130px !important;
+    height: 180px !important;
+    font-size: 0.5em;
+  }
+
+  .text-playlist {
+    padding: 5px !important;
+  }
+
+  .container-reg {
+    height: 320px !important;
+  }
+
 }
 
 @media (max-width: 400px) {
-  #spotify {
+  #duepl {
+  width: 78vh;
+  height: 50vh !important;
+  display: inline-block;
+  }
+
+  .panel-spotify {
     float: none;
     border-right: none;
-    height: 90vh;
-    width: 58vh;
+    height: 80vh;
+    width: 80vh;
     display: block;
   }
+
+  .h2playlist {
+    font-size: 1.5em !important;
+    width: 80vh;
+    margin-bottom: 1em;
+  }
+
+  span {
+    font-size: 0.6em !important;
+  }
+
+  .box-playlist {
+    width: 130px !important;
+    height: 180px !important;
+    font-size: 0.6em;
+  }
+
+  .text-playlist {
+    padding: 5px !important;
+  }
+
+  .container-reg {
+    height: 320px !important;
+  }
+
 }
+
+.panel-spotify {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  margin: 0;
+}
+
 
 .box-playlist {
     display: inline-block;
@@ -31,15 +112,15 @@
     align-items: right;
     padding-right: 0;
     margin: 2em;
-    margin-bottom: 0;
   }
 
-  @media (max-width: 900px) {
-    .box-playlist {
-      width: 200px !important;
-    }
-  }
-
+ 
+.sfondo {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
  
 
   .box-playlist:hover {
@@ -50,7 +131,8 @@
   .h2playlist {
     font-size: 4em;
     text-align: center;
-    margin-top: 2.8em;
+    margin-top: 1.5em;
+    text-shadow: 3px 3px #329DF4, 2px 2px 2px #FA6C98, 4px 4px #FA6C98, 2px 2px 2px #FA6C98;
   }
   
   .img-box-playlist {
@@ -74,11 +156,7 @@
     flex-direction: column;
   }
 
-  @media (max-width: 500px) {
-    .h2playlist {
-      font-size: 2.5em;
-    }
-  }
+
 
   .text-playlist .box-title {
     color: #329DF4;
@@ -133,26 +211,26 @@
           align-items: center;
           flex-direction: column;
           height: 100%;
-          padding-bottom: 3em;
+          padding-bottom: 6em;
         font-family: 'Poppins', sans-serif;
-        background-color: white;
         margin: 0;
     }
 
     @media (max-width: 400px) {
      #duepl {
       float: none;
-    border-right: none;
-    height: 80vh;
-    width: 78vh;
-    display: block;
+      border-right: none;
+      height: 80vh;
+      width: 78vh;
+      display: inline-block;
      }
     }
   
       
       span {
-          font-size: 1em;
+          font-size: 1.3em;
           color: white;
+          padding-right: 2%;
       }
       
       .areg {
@@ -193,9 +271,9 @@
             box-shadow: 20px 20px 20px rgba(0,0,0,0.25), 20px 20px 20px rgba(0,0,0,0.22);
           position: relative;
           overflow: hidden;
-          width: 1200px;
+          width: 1300px;
           max-width: 100%;
-          min-height: 600px;
+          height: 650px;
       }
       
       .form-container-reg {

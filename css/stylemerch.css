@@ -1,26 +1,40 @@
-.merch {
-  align-items: center;
-  margin-bottom: 0em;
-  margin-top: 5em;
-  padding: 4em;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 600px) {
-  .merch{
+.panel-merch {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  padding-bottom: 6em;
+  padding-top: 4em;
+  background: white;
+}
+
+@media (max-width: 500px) {
+  .panel-merch{
     float: none;
     border-right: none;
-    height: 68vh;
-    width: 46vh;
+    height: 80vh;
+    width: 62vh;
     display: block;
+    padding-top: 1em;
   }
 }
 
 @media (max-width: 400px) {
-  .merch {
+  .panel-merch {
     float: none;
     border-right: none;
     height: 90vh;
-    width: 58vh;
+    width: 80vh;
     display: block;
   }
 }
@@ -28,13 +42,11 @@
 
 .text-merch {
     display: inline-block;
-    margin-right: 1em;
     margin-bottom: 0;
     font-size: 2em;
     text-align: center;
-    margin-left: 1em;
-    color: #fff;
-    text-shadow: 1px 2px #329DF4, 2px 2px #FA6C98;
+    color: #F7F7F7;
+    text-shadow: -2px 0 #FA6C98, 0px 2px #329DF4, 2px 0 #329DF4, 0 -2px #329DF4;
   }
   
   .slider-container {
@@ -44,6 +56,8 @@
     height: 100%;
     width: 100%;
     margin-top: 4em;
+    padding-top: 0;
+    padding-bottom: 4em;
   }
 
 
@@ -67,8 +81,9 @@
   .slider {
     width: 650px;
     height: 400px;
-    margin: 20px;
-    margin-right: 2em;
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 0;
     text-align: center;
     border-radius: 10px;
     overflow: hidden;
@@ -78,10 +93,17 @@
 
   @media (max-width: 500px) {
   .slider {
-    width: 380px;
-    height: 200px;
+    width: 450px;
+    height: 300px;
    }
   }
+
+  @media (max-width: 400px) {
+    .slider {
+      width: 400px;
+      height: 250px;
+     }
+    }
 
   .slides {
     display: flex;
@@ -105,7 +127,7 @@
     scroll-snap-align: center;
     margin-right: 0px;
     box-sizing: border-box;
-    background: white;
+    background: #fff;
     transform-origin: center center;
     transform: scale(1);
   }
@@ -212,7 +234,7 @@
 
   .logo {
     width: 400px;
-    height: 90px;
+    height: 120px;
     margin: 0;
     padding: 0;
   }

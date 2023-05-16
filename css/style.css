@@ -8,13 +8,18 @@ body {
     flex-direction: column;
 }
 
-/*.........../// MEDIA QUERY ///................*/
-/*.... <600px, 601px, 768px, 992px, 1200px> ....*/
+html {
+  scroll-behavior: smooth;
+}
 
-@media only screen and (max-width: 500px) and (orientation: landscape){
-  .wrapper-main{
-    width: 100%;
-  }
+.img-home {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .btn {
@@ -37,17 +42,22 @@ body {
 	transition: 80ms ease-in !important;
 }
 
-.btn-registrati {
-  color: #fff;
-  background: #329DF4;
-  font-family: 'Asap Condensed', sans-serif;
+.btn:hover {
+  color:#329DF4;
+  background-color: white;
+  transition: all ease 0.3s;
 }
 
-.btn-registrati:hover {
-  background: #329DF4;
-  transform: scale(1.2) !important;
-  transition: 0.2s linear !important;
+.btn a {
+  text-decoration: none;
+  color: #FA6C98;
 }
+
+.btn:hover a {
+  color: #329DF4;
+  transition: all ease 0.3s;
+}
+
 
 
 /*......... NAVBAR ........*/
@@ -59,27 +69,33 @@ body {
   background: #fff;
   color: white;
   opacity: 0.85;
-  height: 3.25em;
+  height: 4em;
   z-index: 12;
+  text-align: center;
+  align-items: center !important;
+  display: inline-block;
 }
 
-nav ul {
-  float: left;
-  margin-left: 20px;
+.link-reg {
+  float: right;
+  margin-right: 2em;
 }
 
 nav ul li {
+  float: left;
   display: inline-block;
-  margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-left: 2em;
+  align-items: center;
+  padding-top: 0em;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #444;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
+  font-family: 'Asap Condensed', sans-serif;
 }
 
 nav ul li a:hover {
@@ -87,97 +103,71 @@ nav ul li a:hover {
   transition: color 0.3s ease-in-out;
 }
 
+/*---------- MEDIA NAVBAR ------------*/
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
+  .navbar {
+    display: inline-block;
+    height: 3.2em;
+  }
+
+  nav ul li {
+    font-size: 1em;
+    margin-left: 0.6em;
+  }
+
+}
+
+
+@media (max-width: 400px) {
 
   .navbar {
-    float: none;
-    display: block;
+    display: inline-block;
+    height: 3.2em;
   }
 
-
-
-@media (max-width: 700px) {
-  nav ul li a {
-    font-size: 0.7em;
+  nav ul li {
+    font-size: 0.8em;
+    margin-left: 0.4em;
   }
-}
 
 }
 
 
 
 
-.lacrima {
-  margin-top: 0;
-  height: 200px;
-  width: 500px;
-}
+
+
+
+
+
 
 
 
 /* ............//// PAGINA HOME ////......... */
 
-.showcase-area {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
+/*------------ MEDIA PAGINA HOME ------------*/
 
 @media (max-width: 500px) {
+  .img-home {
+    width: 100%;
+    height: 140vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
   .showcase-area {
     float: none;
     border-right: none;
     height: 80vh;
-    width: 60vh;
+    width: 62vh;
     display: block;
   }
-}
 
-@media (max-width: 400px) {
-  .showcase-area {
-    float: none;
-    border-right: none;
-    height: 80vh;
-    width: 78vh;
-    float: none;
-    display: block;
-  }
-}
-
-
-.showcase-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  }
-
-
-.main-title {
-  margin-top: 0em;
-  font-size: 5.5em;
-  display: block;
-  font-family: 'Asap Condensed', sans-serif;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    text-shadow: 3px 3px #329DF4, 2px 2px 2px #FA6C98, 4px 4px #FA6C98, 2px 2px 2px #FA6C98;
-}
-
-.sottotitolo { 
-    font-family: 'Asap Condensed', sans-serif;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    text-shadow: 3px 3px #329DF4, 2px 2px 2px #FA6C98, 4px 4px #FA6C98, 2px 2px 2px #FA6C98;
-  font-size: 2em;
-}
-
-
-@media (max-width: 500px) {
   .main-title {
     font-size: 3.5em;
   }
@@ -185,38 +175,133 @@ nav ul li a:hover {
   .sottotitolo {
     font-size: 2em;
   }
+
 }
+
+
+@media (max-width: 400px) {
+  .img-home {
+    width: 100%;
+    height: 150vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .showcase-area {
+    float: none;
+    border-right: none;
+    height: 120vh;
+    width: 80vh;
+    display: block;
+  }
+
+  .main-title {
+    font-size: 3em;
+  }
+
+  .sottotitolo {
+    font-size: 2em;
+  }
+
+}
+
+
+
+.showcase-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  }
+
+.text-title {
+  align-items: center !important;
+  height: 50%;
+  text-align: center;
+  display: block;
+}
+
+  .lacrima {
+    margin-top: 8em;
+    height: 30%;
+    align-items: center;
+    width: 100%;
+  }
+  
+
+.main-title {
+  font-size: 5.5em;
+  margin: 0;
+  font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: -1px -1px #329DF4, -3px -3px #EB8AB6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sottotitolo { 
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    text-shadow: -1px -1px #329DF4, -3px -3px #EB8AB6;
+  font-size: 2em;
+  width: 100%;
+}
+
+
 
 
 
 
 /*........... SEZIONE EVENTI ..........*/
 
-.h2eventi {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  font-size: 3em;
+.panel-eventi {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  font-family: 'Asap Condensed', sans-serif;
+  text-align: center;
+  align-items: center;
+  color: #24262b;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  padding-bottom: 6em;
 }
 
-.sezioneeventi {
-  font-family: 'Asap Condensed', sans-serif;
-  padding: 0px 0px 5px 20px;
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 2em;
+.container {
+  width: 100%;
+  align-items: center;
 }
+
+.h2eventi {
+  color: #24262b;
+  font-size: 3em;
+  padding-top: 0.8em;
+}
+
 
 .card {
   display: inline-block;
   text-align: center;
-  background-color: white;
+  background-color: #F7F7F7;
   border-color: #444;
   padding: 0px 0px 20px;
   box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  margin: 15px;
+  margin: 40px;
   border-radius: 10px 10px 10px 10px;
-  width: 10em;
+  width: 16em;
   height: auto;
 }
 
@@ -230,10 +315,10 @@ nav ul li a:hover {
   border-radius: 10px 10px 0px 0px;
 }
 
-.btn-primary {
+.btn {
   border-radius: 30px;
   background-color: #329DF4;
-	border: 1px solid #FF416C;
+	border: 2px solid #EB8AB6;
 	color: white;
 	font-size: 20px;
 	font-weight: bold;
@@ -244,39 +329,52 @@ nav ul li a:hover {
 }
 
 .card-title{
-  margin-bottom: 0;
+  margin-bottom: 0.3em;
+  margin-top: 0.7em;
 }
 
 .card-text {
-  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
 }
 
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 500px) {
   
-  .sezioneeventi {
-    font-size: 1em;
+  .panel-eventi {
+    font-size: 1.1em;
+    float: none;
+    height: 110vh;
+    width: 62vh;
+    display: inline-block;
+    padding-bottom: 4em;
   }
 
   .card {
-    display: inline-flex;
-    width: 12em;
-    height: 12em;
-    padding: 0 0 0 0;
-    margin-bottom: 2em;
+    display: inline-block;
+    width: 13em;
+    height: fit-content;
+    padding: 0;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
+    margin-top: 2.3em;
+    margin-right: 1.5em;
+    font-size: 0.8em;
   }
 
-  .card-body {
-    margin-left: 30px;
+  .cardbody {
+    margin-bottom: 5em !important;
   }
 
   .card-img {
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
   }
 
   .btn-primary {
@@ -285,11 +383,62 @@ h5 {
     padding: 8px 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 2em;
+  }
+
+  .h2eventi {
+    margin: 0;
   }
   
-
 }
 
+@media (max-width: 400px) {
+  
+  .panel-eventi {
+    font-size: 1.1em;
+    float: none;
+    height: 150vh;
+    width: 80vh;
+    display: inline-block;
+    padding-bottom: 4em;
+  }
+
+  .card {
+    display: inline-block;
+    width: 13em;
+    height: fit-content;
+    padding: 0;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
+    margin-top: 2.3em;
+    margin-right: 1.5em;
+    font-size: 0.8em;
+  }
+
+  .cardbody {
+    margin-bottom: 5em !important;
+  }
+
+  .card-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .btn-primary {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 2em;
+  }
+
+  .h2eventi {
+    margin: 0;
+  }
+  
+}
 
 
 
@@ -301,30 +450,31 @@ h5 {
 /*................ FOOTER .................*/
 
 @media (max-width: 500px) {
-  .sezionefooter {
+  footer {
+    float: none;
     border-right: none;
-    height: 60vh;
-    width: 60vh;
-    display: inline-block;
-  }
-}
-
-@media (max-width: 400px) {
-  .sezionefooter {
-    border-right: none;
-    height: 60vh;
-    width: 78vh;
+    height: 20vh;
+    width: 62vh;
     display: inline-block;
   }
 }
 
 
-
-.container{
-  margin:0;
-  background: -webkit-linear-gradient(to right, #FFFFFF, #EB8AB6);
-          background: linear-gradient(to right, #EB8AB6, #329DF4);
+.panel-footer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-family: 'Asap Condensed', sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
 }
+
+
+
 
 .row{
   display: block;
@@ -335,7 +485,7 @@ h5 {
 
 .row2 {
   align-items: center;
-  display: flex;
+  display: block;
 }
 
 
@@ -353,7 +503,7 @@ ul{
   .footer-col {
     border-right: none;
     height: 20vh;
-    width: 60vh;
+    width: 61vh;
     display: inline-flex;
     font-size: 1em;
   }
@@ -369,8 +519,19 @@ ul{
 .footer-col .social-links a {
   width: 25px !important;
   height: 25px !important;
-  font-size: 12px;
+  font-size: 10px;
   display: inline-block;
+  line-height: 26px !important;
+  margin-right: 5px !important;
+}
+
+.row2 {
+  display: block;
+}
+
+.social-links {
+  display: inline;
+  margin-left: 15px !important;
 }
 }
 
@@ -378,17 +539,20 @@ ul{
 @media (max-width: 400px) {
   .footer-col {
     border-right: none;
-    height: 40vh;
-    width: 78vh;
+    height: 20vh;
+    width: 80vh;
     display: inline-flex;
-    font-size: 0.8em;
+    font-size: 1em;
+  }
+
+  footer {
+    width: 80vh;
   }
 
   .footer-col ul li a{
     font-size: 10px !important;
   }
-
-.footer-col{
+  .footer-col{
    width: 25%;
    padding: 0 15px;
    display: inline-block;
@@ -397,10 +561,27 @@ ul{
 .footer-col .social-links a {
   width: 25px !important;
   height: 25px !important;
-  font-size: 12px;
-  display: inline-flex;
+  font-size: 10px;
+  display: inline-block;
+  line-height: 26px !important;
+  margin-right: 5px !important;
+}
+
+.row2 {
+  display: block;
+  align-items: center;
+}
+
+.social-links {
+  display: inline;
+  margin-left: 0px !important;
+}
+
+.logo2 {
+  height: 100px !important;
 }
 }
+
 
 
 .footer-col h4{
@@ -409,7 +590,6 @@ ul{
   margin-bottom: 35px;
   margin-left: 1em;
   font-weight: bold;
-  position: relative;
   text-align: center;
   font-family: 'Asap Condensed', sans-serif;
 }
@@ -450,11 +630,13 @@ ul{
   background-color: #ffffff;
 }
 
-
+h4 {
+  margin-bottom: 20px;
+}
 
 .logo2 {
-  width: 400px;
-  height: 100px;
+  width: 100%;
+  height: 200px;
 }
 
 

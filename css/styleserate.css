@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.panel-serate {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-family: 'Asap Condensed', sans-serif;
+  color: #24262b;
+  align-items: center;
+}
+
+.text-serate {
+  font-size: 5em;
+}
+
+.img-serate {
+    width: 50%;
+    height: auto;
+}
+
+.collage-postit {
+  width: 100%;
+  height: 100%;
+}
+
+.section-video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.video {
+  width: 50%;
+  height: 100%;
+  padding-bottom: 0;
+}
+
+.postit {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 500px) {
+  
+  .postit {
+    float: none;
+    height: auto;
+    width: 62vh;
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .postit {
+    float: none;
+    height: auto;
+    width: 80vh;
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.div-serate {
+    display: inline-block;
+}
