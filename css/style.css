@@ -105,6 +105,51 @@ nav ul li a:hover {
 
 /*---------- MEDIA NAVBAR ------------*/
 
+@media (max-width: 1000px) {
+nav ul li {
+  float: left;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-left: 2em;
+  align-items: center;
+  padding-top: 0em;
+}
+}
+
+@media (max-width: 800px) {
+  nav ul li {
+    float: left;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-left: 2em;
+    align-items: center;
+    padding-top: 0em;
+  }
+
+  .navbar {
+    height: 3em
+  }
+  }
+
+
+  @media (max-width: 600px) {
+    nav ul li {
+      float: left;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-left: 2em;
+      align-items: center;
+      padding-top: 0em;
+    }
+  
+    .navbar {
+      height: 2.5em
+    }
+    }
+
+
+
+
 @media (max-width: 500px) {
   .navbar {
     display: inline-block;
@@ -354,7 +399,7 @@ h5 {
     height: 110vh;
     width: 62vh;
     display: inline-block;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
   }
 
   .card {
@@ -517,12 +562,13 @@ ul{
 }
 
 .footer-col .social-links a {
-  width: 25px !important;
-  height: 25px !important;
-  font-size: 10px;
+  width: 22px !important;
+  height: 22px !important;
+  font-size: 8px;
   display: inline-block;
   line-height: 26px !important;
   margin-right: 5px !important;
+  align-items: center;
 }
 
 .row2 {
