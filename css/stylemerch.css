@@ -24,7 +24,7 @@ html {
     width: 62vh;
     display: inline-block;
     padding-top: 1em;
-    padding-bottom: 18em;
+    padding-bottom: 22em;
   }
 
   .slider-container {
@@ -47,7 +47,7 @@ html {
     height: 90vh;
     width: 80vh;
     display: inline-block;
-    padding-bottom: 25em !important;
+    padding-bottom: 30em !important;
   }
 }
 
