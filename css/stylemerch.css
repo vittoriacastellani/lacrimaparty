@@ -71,6 +71,16 @@ html {
     text-align: center;
   }
 
+  @media (max-width: 1000px) {
+    .slider-container {
+      display: inline-block;
+    }
+
+    .video {
+      margin-top: 2em;
+    }
+  }
+
   
   
   .btn-acquista {
