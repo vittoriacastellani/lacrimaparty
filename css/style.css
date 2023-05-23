@@ -191,7 +191,7 @@ nav ul li {
 
 /*------------ MEDIA PAGINA HOME ------------*/
 
-@media (min-width: 412px) {
+@media (min-width: 412px) and (max-width: 500px) {
   .img-home {
     width: 100%;
     height: 190vh;
@@ -388,7 +388,7 @@ h5 {
 
 
 
-@media (min-width: 412px) {
+@media (min-width: 412px) and (max-width: 500px) {
   
   #panel-eventi {
     font-size: 1.1em;
@@ -494,7 +494,7 @@ font-size: 1.1em;
 
 /*......................... FOOTER ...........................*/
 
-@media (min-width: 412px) {
+@media (min-width: 412px) and (max-width: 500px) {
   footer {
     float: none;
     border-right: none;
@@ -541,7 +541,7 @@ ul{
 
 
 
-@media (min-width: 412px) {
+@media (min-width: 412px) and (max-width: 500px) {
   .footer-col {
     border-right: none;
     height: 20vh;
