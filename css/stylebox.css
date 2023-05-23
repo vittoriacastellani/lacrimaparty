@@ -2,9 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 412px) {
   #duepl {
-  width: 62vh;
+  width: 80vh;
   height: 50vh !important;
   display: inline-block;
   }
@@ -13,14 +13,14 @@ html {
     float: none;
     border-right: none;
     height: 80vh;
-    width: 62vh;
+    width: 80vh;
     display: block;
   }
 
   .h2playlist {
     font-size: 2em !important;
     margin-bottom: 0;
-    width: 62vh;
+    width: 78vh;
   }
 
   span {
@@ -43,7 +43,7 @@ html {
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 412px) {
   #duepl {
   width: 78vh;
   height: 50vh !important;
@@ -216,12 +216,12 @@ html {
         margin: 0;
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 412px) {
      #duepl {
       float: none;
       border-right: none;
       height: 80vh;
-      width: 78vh;
+      width: 80vh;
       display: inline-block;
      }
     }

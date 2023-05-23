@@ -191,10 +191,10 @@ nav ul li {
 
 /*------------ MEDIA PAGINA HOME ------------*/
 
-@media (max-width: 500px) {
+@media (min-width: 412px) {
   .img-home {
     width: 100%;
-    height: 170vh;
+    height: 190vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -206,7 +206,7 @@ nav ul li {
     float: none;
     border-right: none;
     height: 80vh;
-    width: 62vh;
+    width: 80vh;
     display: block;
   }
 
@@ -221,10 +221,10 @@ nav ul li {
 }
 
 
-@media (max-width: 420px){
+@media (max-width: 412px){
   .img-home {
     width: 100%;
-    height: 150vh;
+    height: 170vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -235,7 +235,7 @@ nav ul li {
   #showcase-area {
     float: none;
     border-right: none;
-    height: 120vh;
+    height: 100vh;
     width: 80vh;
     display: block;
   }
@@ -249,7 +249,6 @@ nav ul li {
   }
 
 }
-
 
 
 
@@ -389,13 +388,13 @@ h5 {
 
 
 
-@media (max-width: 500px) {
+@media (min-width: 412px) {
   
   #panel-eventi {
     font-size: 1.1em;
     float: none;
     height: 110vh;
-    width: 62vh;
+    width: 80vh;
     display: inline-block;
     padding-bottom: 6em;
   }
@@ -440,15 +439,14 @@ font-size: 1.1em;
   
 }
 
-@media (max-width: 420px) {
+@media (max-width: 412px) {
   
   #panel-eventi {
     font-size: 1em;
     float: none;
-    height: 150vh;
+    height: 120vh;
     width: 80vh;
     display: inline-block;
-    padding-bottom: 4em;
   }
 
   .card {
@@ -496,12 +494,12 @@ font-size: 1.1em;
 
 /*......................... FOOTER ...........................*/
 
-@media (max-width: 500px) {
+@media (min-width: 412px) {
   footer {
     float: none;
     border-right: none;
     height: 20vh;
-    width: 62vh;
+    width: 80vh;
     display: inline-block;
   }
 }
@@ -543,7 +541,7 @@ ul{
 
 
 
-@media (max-width: 500px) {
+@media (min-width: 412px) {
   .footer-col {
     border-right: none;
     height: 20vh;
@@ -581,7 +579,7 @@ ul{
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 412px) {
   .footer-col {
     border-right: none;
     height: 20vh;

@@ -21,7 +21,7 @@ html {
     float: none;
     border-right: none;
     height: 80vh;
-    width: 62vh;
+    width: 80vh;
     display: inline-block;
     padding-top: 1em;
     padding-bottom: 22em;
@@ -40,14 +40,14 @@ html {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 412px) {
   #panel-merch {
     float: none;
     border-right: none;
     height: 90vh;
     width: 80vh;
     display: inline-block;
-    padding-bottom: 30em !important;
+    padding-bottom: 22em !important;
   }
 }
 
