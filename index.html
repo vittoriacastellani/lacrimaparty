@@ -37,33 +37,32 @@
 
     </head>
 
-    <header>
-
-      <!--------------- NAVBAR ------------------->
-      <nav class="navbar">
-        <div class="navbar-container">
-
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#eventi">EVENTI</a></li>
-                <li><a href="#playlist">PLAYLIST</a></li>
-                <li><a href="#merch">MERCH</a></li>
-                <li><a href="registrati.html" target="_blank">GALLERIA</a></li>
-                <li><a href="#footer">CONTATTI</a></li>
-                <li class="link-reg"><a href="registrati.html" target="_blank">REGISTRATI <i class="fa-solid fa-user"></i></a></li>
-            </ul>
-        </div>
-
-    </nav>
-    </header>
-
 
     <body>
+      <header>
+
+        <!--------------- NAVBAR ------------------->
+        <nav class="navbar">
+          <div class="navbar-container">
+  
+              <ul>
+                  <li><a href="#showcase-area">HOME</a></li>
+                  <li><a href="#panel-eventi">EVENTI</a></li>
+                  <li><a href="#duepl">PLAYLIST</a></li>
+                  <li><a href="#merch">MERCH</a></li>
+                  <li><a href="registrati.html" target="_blank">GALLERIA</a></li>
+                  <li><a href="#footer">CONTATTI</a></li>
+                  <li class="link-reg"><a href="registrati.html" target="_blank">REGISTRATI <i class="fa-solid fa-user"></i></a></li>
+              </ul>
+          </div>
+  
+      </nav>
+      </header>
 
 
-      <!---------------------- HOME ---------------------->
-        <section class="showcase-area">
-          <a name="home"><img src="imgs/opacitablu.jpg" class="img-home"></a>
+      <!------------------------ HOME ------------------------->
+        <section id="showcase-area">
+          <img src="imgs/opacitablu.jpg" class="img-home">
           <div class="showcase-container">
             <img src="imgs/lacrimasvg.svg" class="lacrima">
               <div class="text-title">
@@ -76,10 +75,11 @@
 
 
 
-      <!--------------------- EVENTI ------------------->
-        <div class="panel-eventi">
+      <!----------------------- EVENTI ------------------------>
+        <section id="panel-eventi">
+
           <div class="container">
-            <a name="eventi"><h2 class="h2eventi">PROSSIMI EVENTI</h2></a>
+            <h2 class="h2eventi">PROSSIMI EVENTI</h2>
           </div>
 
             <div class="card">
@@ -128,14 +128,13 @@
 
             </div> 
           
-          </div>
+        </section>
 
-      <!------------------ SPOTIFY ------------------->
+      <!---------------------- SPOTIFY ------------------------>
+      <section class="sfondo">
       
-  <section class="sfondo">
-      
-      <section class="panel-spotify" id="spotify">
-        <a name="playlist"><h2 class="h2playlist">Ascolta su Spotify l'unica, vera e inimitabile playlist ufficiale LACRIMA PARTY</h2></a>
+      <section id="panel-spotify">
+        <h2 class="h2playlist">Ascolta su Spotify l'unica, vera e inimitabile playlist ufficiale LACRIMA PARTY</h2>
       </section>  
 
       <section id="duepl">
@@ -190,10 +189,10 @@
 
       </section>
 
-    </section>
+      </section>
 
-     <!------------------------ MERCH --------------------------->
-      <section class="panel-merch">
+     <!---------------------- MERCH ------------------------>
+      <section id="panel-merch">
         <div class="slider-container">
 
 
@@ -219,50 +218,25 @@
 
 
 
-    <!--------------------- SERATE ------------------------->
+    <!---------------------- SERATE ------------------------->
     
     <section class="postit">
       <img src="imgs/collagepostit.jpg" class="collage-postit">
     </section>
 
-
-   
-
-    <!--------------------- SLIDER PROVA ----------------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
       
-    <!--------------------- FOOTER -------------------------->
+    <!------------------ --- FOOTER -------------------------->
     
-    <section class="panel-footer">
-    <footer>
+    <section id="panel-footer">
+
     <footer class="footer">
       <div class="container-footer">
-       <div class="row">
 
-      <section>
-        <div>
+        <div class="row">
           <img src="imgs/lacrimasvg.svg" class="logo2">
         </div>
-      </section>
+        
+      
 
       <section class="row2">
          <div class="footer-col">
@@ -275,7 +249,7 @@
          <div class="footer-col">
            <h4>Acquista</h4>
            <ul>
-             <li><a href="#">Prevendite</a></li>
+             <li><a href="#panel-eventi">Prevendite</a></li>
              <li><a href="https://api.whatsapp.com/send/?phone=393284439830&text&type=phone_number&app_absent=0" target="_blank">Merchandising</a></li>
            </ul>
          </div>
@@ -289,12 +263,25 @@
              <a href="https://t.me/lacrimaparty" target="_blank"><i class="fab fa-telegram"></i></a>
            </div>
          </div>
+
+         <div class="footer-col">
+          
+          <ul>
+            <li><a href="documentazione.html">Documentazione</a></li>
+          </ul>
+         
+          <p class="fine">Sito realizzato da Vittoria Castellani per l'esame universitario di Informatica Umanistica</p>
+          <p class="fine">Non è il sito ufficiale Lacrima Party</p>
+          
+        
+
        </div>
       </div>
     </section>
     </footer>
-    </footer>
-  </section>
 
-    </body>
+    </section>
+
+    
+  </body>
 </html>

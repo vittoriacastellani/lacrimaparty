@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.panel-merch {
+#panel-merch {
   height: auto;
   width: 100%;
   position: relative;
@@ -17,7 +17,7 @@ html {
 
 
 @media (max-width: 500px) {
-  .panel-merch{
+  #panel-merch{
     float: none;
     border-right: none;
     height: 80vh;
@@ -40,8 +40,8 @@ html {
   }
 }
 
-@media (max-width: 400px) {
-  .panel-merch {
+@media (max-width: 420px) {
+  #panel-merch {
     float: none;
     border-right: none;
     height: 90vh;
@@ -70,25 +70,6 @@ html {
     padding-bottom: 4em;
     text-align: center;
   }
-
-
- 
-  
-
-  .div-video {
-    margin-top: 2em;
-    width: 100%;
-    display: inline-block;
-  }
-
-  .video {
-    width: 412px !important;
-    height: 445px !important;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
-    margin-left: 9em;
-    display: inline;
-  } 
 
   
   
@@ -134,16 +115,18 @@ html {
 
 
 
+  .div-video {
+    margin-top: 2em;
+    width: 100%;
+    display: inline-block;
+  }
 
+  .video {
+    width: 412px !important;
+    height: 445px !important;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+    margin-left: 9em;
+    display: inline;
+  } 
 
-
-
-
-
-
-
-
-
-
-
-  /*-------------------- SLIDER PROVA ----------------------------*/

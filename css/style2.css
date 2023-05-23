@@ -14,8 +14,17 @@
 
 .h2reg {
   text-shadow: -1px -1px #329DF4, -3px -3px #EB8AB6;
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: 'Asap Condensed', sans-serif;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+.p1 {
+  margin-top: 0.4em;
 }
   
   span {
@@ -149,10 +158,13 @@
   .overlay-right {
       right: 0;
   }
+
+  .text-social {
+    font-size: 0.7em;
+  }
   
   .social-container {
-      margin: 10px 0;
-      margin-top: 20px;
+      margin: 10px;
   }
   
   .social-container a {
@@ -172,8 +184,7 @@
   }
 
   .logo {
-    margin-bottom: 0.5rem;
-    height: 150px;
+    height: 100px;
     width: auto;
   }
 
@@ -229,6 +240,7 @@
   }
 
   .social:hover {
-    color: #FA6C98;
+    color: #329DF4;
+    background-color: #EB8AB6;
     transition: all ease 0.3s;
   }

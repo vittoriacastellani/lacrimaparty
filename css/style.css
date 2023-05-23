@@ -107,7 +107,6 @@ nav ul li a:hover {
 
 @media (max-width: 1000px) {
 nav ul li {
-  float: left;
   display: inline-block;
   font-size: 1.1rem;
   margin-left: 2em;
@@ -118,7 +117,6 @@ nav ul li {
 
 @media (max-width: 800px) {
   nav ul li {
-    float: left;
     display: inline-block;
     font-size: 0.9rem;
     margin-left: 2em;
@@ -134,7 +132,6 @@ nav ul li {
 
   @media (max-width: 600px) {
     nav ul li {
-      float: left;
       display: inline-block;
       font-size: 0.8rem;
       margin-left: 2em;
@@ -205,7 +202,7 @@ nav ul li {
     z-index: 0;
   }
   
-  .showcase-area {
+  #showcase-area {
     float: none;
     border-right: none;
     height: 80vh;
@@ -224,7 +221,7 @@ nav ul li {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 420px){
   .img-home {
     width: 100%;
     height: 150vh;
@@ -235,7 +232,7 @@ nav ul li {
     z-index: 0;
   }
   
-  .showcase-area {
+  #showcase-area {
     float: none;
     border-right: none;
     height: 120vh;
@@ -252,6 +249,7 @@ nav ul li {
   }
 
 }
+
 
 
 
@@ -308,7 +306,7 @@ nav ul li {
 
 /*........... SEZIONE EVENTI ..........*/
 
-.panel-eventi {
+#panel-eventi {
   height: 100%;
   width: 100%;
   background-color: #fff;
@@ -393,7 +391,7 @@ h5 {
 
 @media (max-width: 500px) {
   
-  .panel-eventi {
+  #panel-eventi {
     font-size: 1.1em;
     float: none;
     height: 110vh;
@@ -442,9 +440,9 @@ font-size: 1.1em;
   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   
-  .panel-eventi {
+  #panel-eventi {
     font-size: 1em;
     float: none;
     height: 150vh;
@@ -496,7 +494,7 @@ font-size: 1.1em;
 
 
 
-/*................ FOOTER .................*/
+/*......................... FOOTER ...........................*/
 
 @media (max-width: 500px) {
   footer {
@@ -509,7 +507,7 @@ font-size: 1.1em;
 }
 
 
-.panel-footer {
+#panel-footer {
   height: 100%;
   width: 100%;
   position: relative;
@@ -521,9 +519,6 @@ font-size: 1.1em;
   align-items: center;
   display: inline-block;
 }
-
-
-
 
 .row{
   display: block;
@@ -586,7 +581,7 @@ ul{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .footer-col {
     border-right: none;
     height: 20vh;
@@ -676,9 +671,10 @@ ul{
   color: #ffffff;
   transition: all 0.5s ease;
 }
+
 .footer-col .social-links a:hover{
-  color: #24262b;
-  background-color: #ffffff;
+  color: #329DF4;
+  background-color: #EB8AB6;
 }
 
 h4 {
@@ -689,6 +685,18 @@ h4 {
   width: 100%;
   height: 200px;
 }
+
+.fine {
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.7em;
+  margin-top: 0.7em;
+}
+
+
+
+
 
 
 

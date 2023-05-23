@@ -64,7 +64,7 @@ html {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   
   .postit {
     float: none;

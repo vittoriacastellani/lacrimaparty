@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    text-shadow: -1px -1px #329DF4, -3px -3px #EB8AB6;
+    width: 100%;
+    position: absolute;
+}
+
+h2 {
+    font-size: 4em;
+    margin: 0;
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    text-shadow: -1px -1px #329DF4, -3px -3px #EB8AB6;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0;
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    text-shadow: -1px -1px #329DF4, -3px -3px #EB8AB6;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.sfondo {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#text {
+    z-index: 2;
+    position: absolute;
+    margin-top: 5em;
+}
+
+p {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+.p-titolo {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.imgs-architettura {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0.8em;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+.imgs-wireframe {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0.8em;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+.logodoc {
+    width: 300px;
+    height: auto;
+    margin-top: 2em;
+  }
+
+.footerdoc {
+    text-decoration: none;
+    font-weight: bold;
+    color: #EB8AB6;
+}
+
+.footerdoc:hover {
+    color:#329DF4;
+}

@@ -9,7 +9,7 @@ html {
   display: inline-block;
   }
 
-  .panel-spotify {
+  #panel-spotify {
     float: none;
     border-right: none;
     height: 80vh;
@@ -43,14 +43,14 @@ html {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   #duepl {
   width: 78vh;
   height: 50vh !important;
   display: inline-block;
   }
 
-  .panel-spotify {
+  #panel-spotify {
     float: none;
     border-right: none;
     height: 80vh;
@@ -84,7 +84,7 @@ html {
 
 }
 
-.panel-spotify {
+#panel-spotify {
   height: 100%;
   width: 100%;
   position: relative;
@@ -216,7 +216,7 @@ html {
         margin: 0;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
      #duepl {
       float: none;
       border-right: none;
