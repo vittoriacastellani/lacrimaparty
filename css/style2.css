@@ -1,16 +1,143 @@
 .bodyregistrati {
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
     background-size: cover;
-      display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      margin: -20px 0 50px;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-color: white;
     margin: 0;
 }
+
+/*......... NAVBAR ........*/
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  width: 100%;
+  background: #fff;
+  color: white;
+  opacity: 0.85;
+  height: 4em;
+  z-index: 12;
+  text-align: center;
+  align-items: center !important;
+  display: inline-block;
+}
+
+.active {
+  color: #329DF4;
+}
+
+.link-reg {
+  float: right;
+  margin-right: 2em;
+}
+
+nav ul li {
+  float: left;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 2em;
+  align-items: center;
+  padding-top: 0em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #329DF4;
+  transition: color 0.3s ease-in-out;
+}
+
+/*---------- MEDIA NAVBAR ------------*/
+
+@media (max-width: 1000px) {
+nav ul li {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-left: 2em;
+  align-items: center;
+  padding-top: 0em;
+}
+}
+
+@media (max-width: 800px) {
+  nav ul li {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-left: 2em;
+    align-items: center;
+    padding-top: 0em;
+  }
+
+  .navbar {
+    height: 3em
+  }
+  }
+
+
+  @media (max-width: 600px) {
+    nav ul li {
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-left: 2em;
+      align-items: center;
+      padding-top: 0em;
+    }
+  
+    .navbar {
+      height: 2.5em
+    }
+    }
+
+
+
+
+@media (max-width: 500px) {
+  .navbar {
+    display: inline-block;
+    height: 3.2em;
+  }
+
+  nav ul li {
+    font-size: 1em;
+    margin-left: 0.6em;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .navbar {
+    display: inline-block;
+    height: 3.2em;
+  }
+
+  nav ul li {
+    font-size: 0.8em;
+    margin-left: 0.4em;
+  }
+
+}
+
+
+
+.panel-registrati {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+
+
 
 .h2reg {
   text-shadow: -1px -1px #329DF4, -3px -3px #EB8AB6;
@@ -47,20 +174,20 @@ p{
   
   .container-reg {
       z-index: 1;
-    background-color: #fff;
+      background-color: #fff;
       border-radius: 10px;
-        box-shadow: 20px 20px 20px rgba(0,0,0,0.25), 20px 20px 20px rgba(0,0,0,0.22);
+      box-shadow: 20px 20px 20px rgba(0,0,0,0.25), 20px 20px 20px rgba(0,0,0,0.22);
       position: relative;
       overflow: hidden;
       width: 768px;
       height: 480px;
+      text-align: center;
   }
   
   @media (max-width: 500px) {
     .container-reg {
       height: 300px;
       width: 370px;
-      display: inline-block;
   }
 
   span {
@@ -243,4 +370,8 @@ p{
     color: #329DF4;
     background-color: #EB8AB6;
     transition: all ease 0.3s;
+  }
+
+  .active {
+    color: #329DF4;
   }
